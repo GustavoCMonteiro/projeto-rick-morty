@@ -3,12 +3,12 @@ import React from "react";
 const Cards = ({ image, name, status, species, gender, origin, loading }) => {
   if (loading) {
     return (
-      <div className="bg-green-800 w-60 rounded-2xl mt-8 min-h-[500px] shadow-lg shadow-zinc-900">
+      <div className="bg-green-800 w-80 sm:w-60 rounded-2xl mt-8 min-h-[500px] shadow-lg shadow-zinc-900">
         <div className="p-4">
           <div className="bg-zinc-500 h-10 opacity-40 rounded-2xl"></div>
         </div>
-        <div className="bg-zinc-500 h-60 opacity-40"></div>
-        <div className="flex flex-col gap-2 p-4 font-bold">
+        <div className="bg-zinc-500 h-80 sm:h-60 opacity-40"></div>
+        <div className="flex flex-col gap-1 p-4 font-bold">
           <div className="bg-zinc-500 h-6 opacity-40 rounded-2xl"></div>
           <div className="bg-zinc-500 h-6 opacity-40 rounded-2xl"></div>
           <div className="bg-zinc-500 h-6 opacity-40 rounded-2xl"></div>
