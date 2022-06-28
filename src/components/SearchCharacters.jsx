@@ -68,13 +68,13 @@ const SearchCharacters = () => {
         <div className="flex justify-center mt-8">
           <div className="flex align-middle gap-3">
             <input
-              className="bg-zinc-700 rounded px-5 h-11"
+              className="bg-zinc-800 rounded px-5 h-11 shadow-lg shadow-zinc-900"
               type="text"
               placeholder="Character name"
               onChange={(event) => setInputValue(event.target.value)}
             />
             <button
-              className="bg-green-800 font-bold sm:text-xl py-2 px-5 rounded-2xl uppercase"
+              className="bg-green-800 font-bold sm:text-xl py-2 px-5 rounded-2xl uppercase hover:bg-green-900 transition-colors shadow-lg shadow-zinc-900"
               onClick={() => setCharacter(inputValue)}
             >
               Search
@@ -108,6 +108,7 @@ const SearchCharacters = () => {
                   status={character.status}
                   species={character.species}
                   gender={character.gender}
+                  origin={character.origin.name}
                 />
               ))}
           </div>

@@ -14,7 +14,7 @@ const RandomCards = () => {
   React.useEffect(() => {
     setLoading(true);
     let arrayNumbers = [];
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 12; i++) {
       const randomNumber = getRandomNumber();
       arrayNumbers.push(randomNumber);
     }
@@ -44,7 +44,7 @@ const RandomCards = () => {
       <section className="max-w-7xl mx-auto">
         <div className="mt-8 flex justify-center">
           <button
-            className="bg-green-800 font-bold sm:text-xl py-2 px-5 rounded-2xl uppercase"
+            className="bg-green-800 font-bold sm:text-xl py-2 px-5 rounded-2xl uppercase hover:bg-green-900 transition-colors shadow-lg shadow-zinc-900"
             onClick={() => setReset(true)}
           >
             Reset Cards
@@ -60,6 +60,7 @@ const RandomCards = () => {
                 status={character.status}
                 species={character.species}
                 gender={character.gender}
+                origin={character.origin.name}
                 loading={loading}
               />
             ))}
