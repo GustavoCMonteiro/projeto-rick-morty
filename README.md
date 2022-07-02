@@ -28,4 +28,4 @@
 
 ### Para o CSS foi utilizado somente o Tailwind, foi minha primeira vez utilizando essa ferramenta, e já gostei bastante de como ela funciona.
 
-### O projeto foi criado com a utilização da ferramente Vite, onde facilita bastante toda a adição de ferramentas extras e dependências.
+### O projeto foi criado com a utilização da ferramenta Vite, onde facilita bastante toda a adição de ferramentas extras e dependências.
